@@ -13,26 +13,19 @@ Amazon Lex는 음성과 텍스트를 사용해 대화형 인터페이스를 구�
 - 봇
   - 역할
   - 유휴 세션 제한시간
-  - COPPA(Children's Online Privacy Protection Act) 적용
+  - 정보 수집 및 COPPA(Children's Online Privacy Protection Act) 적용  
+    Amazon Lex는 문제 해결 및 서비스 개선을 위해 고객 콘텐츠를 수집합니다. 고객 콘텐츠는 기본적으로 보호되며 Amazon Lex API를 사용하여 개별 고객의 콘텐츠를 삭제할 수 있습니다.  
+    Amazon Lex는 네 가지 유형의 콘텐츠를 저장합니다.  
+      - 봇을 빌드하고 훈련하는 데 사용되는 샘플 발언
+      - 봇과 상호 작용하는 사용자의 고객 발언
+      - 사용자가 봇과 상호 작용하는 동안 애플리케이션별 정보를 제공하는 세션 속성
+      - 봇에 대한 단일 요청에 적용되는 정보가 포함된 요청 속성
+    미국에 기반을 둔 회사가 13세 이하 어린이를 대상으로 한 봇을 제공하고자 하는 경우 콘솔 또는 Amazon Lex API를 사용하여 childDirected필드를 true로 설정하여 봇이 어린이 온라인 개인정보 보호법(COPPA)의 적용을 받는다고 Amazon Lex에 알립니다. childDirected필드가 true로 설정 되면 사용자 발언이 저장되지 않습니다.
 
-Amazon Lex는 문제 해결 및 서비스 개선을 위해 고객 콘텐츠를 수집합니다. 고객 콘텐츠는 기본적으로 보호됩니다. Amazon Lex API를 사용하여 개별 고객의 콘텐츠를 삭제할 수 있습니다.
-
-Amazon Lex는 네 가지 유형의 콘텐츠를 저장합니다.
-
-봇을 빌드하고 훈련하는 데 사용되는 샘플 발언
-
-봇과 상호 작용하는 사용자의 고객 발언
-
-사용자가 봇과 상호 작용하는 동안 애플리케이션별 정보를 제공하는 세션 속성
-
-봇에 대한 단일 요청에 적용되는 정보가 포함된 요청 속성
-
-어린이용으로 설계된 모든 Amazon Lex 봇은 어린이 온라인 개인정보 보호법(COPPA)의 적용을 받습니다. 콘솔 또는 Amazon Lex API를 사용하여 childDirected필드를 로 설정하여 봇이 COPPA의 적용을 받는다고 Amazon Lex에 알립니다 true. childDirected필드가 로 설정 되면 true사용자 발화가 저장되지 않습니다.
-
-  - 언어: 
-    Amazon Lex 한국어를 포함해 x개 언어를 지원합니다. 동시에 여러 언어를 지원하도록 언어를 추가하는것이 가능합니다.
-    - 음성 상호 작용:
-      각 언어에서는 
+  - 언어  
+    Amazon Lex 한국어를 포함해 13개 언어를 지원합니다.  Amazon Lex가 지원하는 언어에 대한 정보는 [Amazon Lex가 지원하는 언어](https://docs.aws.amazon.com/lex/latest/dg/how-it-works-language.html)에서 확인하실 수 있습니다. 
+    - 음성 상호 작용  
+      인터페이스에 사용할 언어를 지정합니다. Amazon Lex는 동시에 여러 언어를 사용할 수 있도록 복수의 언어를 음성 상호 작용에 추가하는것이 가능합니다. 
     - 의도 분류 신뢰도 점수 임계값
 
       사용자가 발언을 하면 Amazon Lex는 자연어 이해(NLU)를 사용하여 사용자의 요청을 이해하고 적절한 의도를 반환합니다. 기본적으로 Amazon Lex는 봇이 정의한 가능성이 가장 높은 의도를 반환합니다.
