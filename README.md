@@ -1,4 +1,4 @@
-# Amazon Lex 한국어 뱅킹 챗봇 빌드 워크숍
+# Amazon Lex 한국어 챗봇 빌드 워크숍
 
 Amazon Lex 한국어 챗봇 빌드 워크숍에 오신것을 환영합니다!
 
